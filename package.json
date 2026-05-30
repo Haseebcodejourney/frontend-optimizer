@@ -1,0 +1,62 @@
+{
+  "name": "frontend-optimizer",
+  "version": "1.0.0",
+  "description": "Front-end performance optimizer — WebP, fonts, LCP, dimensions, defer. Run: npx frontend-optimizer optimize",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "frontend-optimizer": "bin/frontend-optimizer",
+    "front-end": "bin/front-end"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "prepublishOnly": "npm run build",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "webp",
+    "image",
+    "optimize",
+    "compress",
+    "png",
+    "jpeg",
+    "frontend",
+    "front-end",
+    "conversion",
+    "fonts",
+    "google-fonts",
+    "self-hosted",
+    "defer",
+    "performance",
+    "critical-css",
+    "lcp",
+    "fetchpriority",
+    "font-display"
+  ],
+  "author": "Hamza Haseeb",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haseebcodejourney/frontend-optimizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Haseebcodejourney/frontend-optimizer/issues"
+  },
+  "homepage": "https://github.com/Haseebcodejourney/frontend-optimizer#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "fast-glob": "^3.3.3",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
