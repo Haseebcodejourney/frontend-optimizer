@@ -1,6 +1,6 @@
 # frontend-optimizer
 
-Front-end performance CLI — optimize images, fonts, HTML, and script loading in one command.
+CLI to optimize front-end assets — WebP images, self-hosted fonts, LCP, dimensions, and deferred JS/CSS.
 
 [![npm version](https://img.shields.io/npm/v/frontend-optimizer.svg)](https://www.npmjs.com/package/frontend-optimizer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
