@@ -28,7 +28,10 @@ if (!cli.startsWith("#!")) {
 }
 
 for (const binName of ["frontend-optimizer", "front-end"]) {
-  writeFileSync(join(binDir, binName), readFileSync(cliPath, "utf8"));
+  writeFileSync(
+    join(binDir, binName),
+    "#!/usr/bin/env node\nimport \"../dist/cli.js\";\n"
+  );
 }
 
 console.log("Built dist/ and bin/");
