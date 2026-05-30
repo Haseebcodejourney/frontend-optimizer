@@ -15,7 +15,7 @@ const program = new Command();
 program
   .name("front-end")
   .description("Front-end performance optimizer — images, fonts, HTML, defer")
-  .version("1.0.0");
+  .version("1.0.1");
 
 const splitPatterns = (value) =>
   value
